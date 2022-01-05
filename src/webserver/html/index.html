@@ -4,20 +4,20 @@
 <head>
 	<style>
 		body {
-		  background-color: coral;
+		  background-color: lightgreen;
 		}
 
 		h1 {
-		  color: navy;
+		  color: black;
 		  margin-left: 20px;
 		}
 		
 		button {
 		background-color: white;
 		color: black;
-		padding: 15px 32px;
+		padding: 50px 50px;
 		text-align: center;
-		margin: 4px 2px;
+		margin: 50px 700px;
 		}
 	</style>
     <meta charset="UTF-8">
@@ -26,15 +26,21 @@
 </style>
 </head>
 <body>
-<h1 align="center">Index</h1>
-<a href="second.html">Link To Second Page</a></br>
-<button id="textChanger">Click Me!</button>
-<div id="firstDiv">Hello world!</div>
-<p>Am introdus si putin text.</p>
-<script>
-	document.getElementById("textChanger").onclick=function(){
-		document.getElementById("firstDiv").innerHTML= "Text is changed";
-	}
-</script>
+	<h1 align="center">Index</h1>
+	<div style="position:relative;  left:700px; top:50px;">
+		<a href="second.html">Link spre pagina 2</a></br>
+	</div>
+	<button id="textChanger">Click Aici!</button>
+	<div style="position:relative;  left:700px; top:-50px;">
+		<div id="firstDiv">Salut!</div>
+	</div>
+	<div style="position:relative;  left:700px; top:-60px;">
+		<p>A little brown fox jumps over the lazy dog.</p>
+	</div>
+		<script>
+			document.getElementById("textChanger").onclick = function () {
+				document.getElementById("firstDiv").innerHTML = "Text";
+			}
+		</script>
 </body>
 </html>
